@@ -16,7 +16,6 @@
 extern bool attempt_exit;
 extern bool true_exit;
 extern bool forced_exit;
-bool user_wants_to_abort;
 
 //Colors
 #define TRUEGREEN (Color) {0,255,0,255}
@@ -26,6 +25,19 @@ bool user_wants_to_abort;
 #define endl "\n"
 const double PIDIV = 1/PI;
 //stuff
+void FocusWindow()
+{
+    RestoreWindow();
+    SetWindowState(FLAG_WINDOW_ALWAYS_RUN);
+    SetWindowState(FLAG_WINDOW_TOPMOST);
+}
+
+void StopFocusWindow()
+{
+    ClearWindowState(FLAG_WINDOW_ALWAYS_RUN);
+    ClearWindowState(FLAG_WINDOW_TOPMOST);
+}
+
 bool is_even (int num)
 {
     return !(num & 1);
@@ -57,6 +69,24 @@ std::string replace_all(std::string str, const std::string& from, const std::str
 
 std::string errorlog;
 
+void logerror(const char *text)
+{
+    std::cerr << text;
+    errorlog += get_time();
+    errorlog += " [ERROR] ";
+    errorlog += " | ";
+    errorlog += text;
+}
+
+void loginfo(const char *text)
+{
+    std::cout << text;
+    errorlog += get_time();
+    errorlog += " [INFO] ";
+    errorlog += " | ";
+    errorlog += text;
+}
+
 void logprint(const char *text)
 {
     std::cout << text;
@@ -65,11 +95,11 @@ void logprint(const char *text)
     errorlog += text;
 }
 
-const char * fix_backslash(const char * cstring)
+std::string fix_backslash(const char * cstring)
 {
     std::string string = cstring;
     string = replace_all(string,"\\","/");
-    return string.c_str();
+    return string;
 }
 
 void do_warning(const char *message)
@@ -112,11 +142,13 @@ void prompt_savelog()
         if ( save )
         {
             const char *filterPatterns[] = { "*.txt" };
+            FocusWindow();
             char * file_name = tinyfd_saveFileDialog("Save log.","dirtlog",1,filterPatterns,"Text files");
             if ( file_name != "")
             {
                 SaveFileText(file_name,errorlog.data());
             }   
+            StopFocusWindow();
         }
 
 }

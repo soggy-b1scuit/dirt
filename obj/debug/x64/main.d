@@ -166,6 +166,11 @@ obj/debug/x64/main.o: src/main.cpp include/raylib.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ostream.tcc \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\istream \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\istream.tcc \
+ c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\fstream \
+ c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\codecvt.h \
+ c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\basic_file.h \
+ c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\c++io.h \
+ c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\fstream.tcc \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\thread \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\stop_token \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\atomic \
@@ -193,7 +198,6 @@ obj/debug/x64/main.o: src/main.cpp include/raylib.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\locale_facets_nonio.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\time_members.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\messages_members.h \
- c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\codecvt.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\locale_facets_nonio.tcc \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\locale_conv.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\iomanip \
@@ -226,11 +230,6 @@ obj/debug/x64/main.o: src/main.cpp include/raylib.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\node_handle.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\unordered_map.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\erase_if.h \
- src/texmissing.hpp include/soloud.h \
- c:\raylib\w64devkit\x86_64-w64-mingw32\include\assert.h \
- include/soloud_filter.h include/soloud.h include/soloud_fader.h \
- include/soloud_audiosource.h include/soloud_bus.h include/soloud_queue.h \
- include/soloud_error.h include/soloud_wav.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\algorithm \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_algo.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\algorithmfwd.h \
@@ -242,7 +241,11 @@ obj/debug/x64/main.o: src/main.cpp include/raylib.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ranges_util.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\pstl\glue_algorithm_defs.h \
  c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\pstl\execution_defs.h \
- include/soloud_thread.h
+ src/texmissing.hpp src/sndmissing.hpp src/icon.hpp include/soloud.h \
+ c:\raylib\w64devkit\x86_64-w64-mingw32\include\assert.h \
+ include/soloud_filter.h include/soloud.h include/soloud_fader.h \
+ include/soloud_audiosource.h include/soloud_bus.h include/soloud_queue.h \
+ include/soloud_error.h include/soloud_wav.h include/soloud_thread.h
 include/raylib.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\stdarg.h:
 c:\raylib\w64devkit\x86_64-w64-mingw32\include\stdarg.h:
@@ -411,6 +414,11 @@ c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\basic_ios
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ostream.tcc:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\istream:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\istream.tcc:
+c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\fstream:
+c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\codecvt.h:
+c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\basic_file.h:
+c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\c++io.h:
+c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\fstream.tcc:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\thread:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\stop_token:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\atomic:
@@ -438,7 +446,6 @@ c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\locale:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\locale_facets_nonio.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\time_members.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\messages_members.h:
-c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\codecvt.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\locale_facets_nonio.tcc:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\locale_conv.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\iomanip:
@@ -472,17 +479,6 @@ c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\enable_sp
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\node_handle.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\unordered_map.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\erase_if.h:
-src/texmissing.hpp:
-include/soloud.h:
-c:\raylib\w64devkit\x86_64-w64-mingw32\include\assert.h:
-include/soloud_filter.h:
-include/soloud.h:
-include/soloud_fader.h:
-include/soloud_audiosource.h:
-include/soloud_bus.h:
-include/soloud_queue.h:
-include/soloud_error.h:
-include/soloud_wav.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\algorithm:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_algo.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\algorithmfwd.h:
@@ -494,4 +490,17 @@ c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ranges_al
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ranges_util.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\pstl\glue_algorithm_defs.h:
 c:\raylib\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\pstl\execution_defs.h:
+src/texmissing.hpp:
+src/sndmissing.hpp:
+src/icon.hpp:
+include/soloud.h:
+c:\raylib\w64devkit\x86_64-w64-mingw32\include\assert.h:
+include/soloud_filter.h:
+include/soloud.h:
+include/soloud_fader.h:
+include/soloud_audiosource.h:
+include/soloud_bus.h:
+include/soloud_queue.h:
+include/soloud_error.h:
+include/soloud_wav.h:
 include/soloud_thread.h:

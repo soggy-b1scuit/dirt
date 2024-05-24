@@ -58,6 +58,8 @@
         "codecvt": "cpp",
         "cstring": "cpp",
         "fstream": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "filesystem": "cpp",
+        "*.def": "cpp"
     }
 }

@@ -76,6 +76,7 @@ GENERATED += $(OBJDIR)/darray.o
 GENERATED += $(OBJDIR)/dr_impl.o
 GENERATED += $(OBJDIR)/klatt.o
 GENERATED += $(OBJDIR)/main.o
+GENERATED += $(OBJDIR)/rape.o
 GENERATED += $(OBJDIR)/resonator.o
 GENERATED += $(OBJDIR)/soloud.o
 GENERATED += $(OBJDIR)/soloud_audiosource.o
@@ -120,6 +121,7 @@ OBJECTS += $(OBJDIR)/darray.o
 OBJECTS += $(OBJDIR)/dr_impl.o
 OBJECTS += $(OBJDIR)/klatt.o
 OBJECTS += $(OBJDIR)/main.o
+OBJECTS += $(OBJDIR)/rape.o
 OBJECTS += $(OBJDIR)/resonator.o
 OBJECTS += $(OBJDIR)/soloud.o
 OBJECTS += $(OBJDIR)/soloud_audiosource.o
@@ -350,6 +352,9 @@ $(OBJDIR)/soloud_waveshaperfilter.o: src/filter/soloud_waveshaperfilter.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/main.o: src/main.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/rape.o: src/rape.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/tinyfiledialogs.o: src/tinyfiledialogs.c
